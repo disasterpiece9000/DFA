@@ -3,9 +3,15 @@ import java.util.ArrayList;
 public class Vertex {
 	// Stores all edges that can be accessed from the vertex
 	ArrayList<Edge> edgeList = new ArrayList<Edge>();
+	private char name;
 	
 	// Does nothing since edges are added after the object is created
-	Vertex(){	
+	Vertex(char name){	
+		this.name = name;
+	}
+	
+	public char getName() {
+		return name;
 	}
 	
 	// Adds an edge to edgeList

@@ -13,6 +13,5 @@ public class Edge {
 		
 		// Adds the Edge to each of the Vertexes
 		startV.addEdge(this);
-		endV.addEdge(this);
 	}
 }

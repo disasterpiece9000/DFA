@@ -15,6 +15,7 @@ public class Graph {
 		// Initially sets the current state to the start state
 		currentState = startState;
 		this.acceptingStates = acceptingStates;
+		System.out.println("Graph generated");
 	}
 	
 	// Accepts an input and changes the current state accordingly
@@ -23,7 +24,7 @@ public class Graph {
 		currentState = currentEdge.endV;
 		
 		// If the current state is an accepting state it returns True, otherwise it returns False
-		if (acceptingStates.containsAll((Collection<Vertex>) currentState)) {
+		if (acceptingStates.contains(currentState)) {
 			return true;
 		}
 		else {
